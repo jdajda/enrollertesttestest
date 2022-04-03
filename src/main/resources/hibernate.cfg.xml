@@ -6,6 +6,7 @@
 	<session-factory>
 		<property name="show_sql">false</property>
 		<property name="format_sql">true</property>
+		<!--property name="dialect">org.sqlite.hibernate.dialect.SQLiteDialect</property-->
 		<property name="dialect">com.company.enroller.persistence.SQLiteDialect</property>
 		<property name="connection.driver_class">org.sqlite.JDBC</property>
 		<property name="connection.url">jdbc:sqlite:enroller.db</property>

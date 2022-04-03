@@ -13,10 +13,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Meeting {
 
 	@Id
-	@GeneratedValue(generator="sqlite")
-	@TableGenerator(name="sqlite", table="sqlite_sequence",
-			pkColumnName="name", valueColumnName="seq",
-			pkColumnValue="sqliteTestTable")
+//	@GeneratedValue (strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(generator="sqlite")
+//	@TableGenerator(name="sqlite", table="sqlite_sequence",
+//			pkColumnName="name", valueColumnName="seq",
+//			pkColumnValue="sqliteTestTable")
 	private long id;
 
 	@Column
